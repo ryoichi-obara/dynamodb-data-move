@@ -1,0 +1,43 @@
+{
+  "name": "dynamodb-data-move",
+  "description": "Move data from DynamoDB to DynamoDB",
+  "version": "1.0.0",
+  "author": "Ryoichi Obara <npmjs0102@gmail.com> (http://ryoichi0102.hatenablog.com/)",
+  "bugs": {
+    "url": "https://github.com/ryoichi-obara/dynamodb-data-move/issues"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.279.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-zip": "^4.1.0"
+  },
+  "homepage": "https://github.com/ryoichi-obara/dynamodb-data-move#readme",
+  "keywords": [
+    "AWS",
+    "Copy",
+    "Data",
+    "DynamoDB",
+    "Lambda",
+    "Move"
+  ],
+  "license": "MIT",
+  "main": "Build/Release/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryoichi-obara/dynamodb-data-move.git"
+  },
+  "scripts": {
+    "build": "npm i && gulp clean && babel src -d build/Release && gulp install-dependancies",
+    "make": "npm run build && gulp build-zip",
+    "quick": "babel src -d build/Release && gulp build-zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "max-len": [
+      "error", {
+        "code": 250,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true
+      }
+    ],
+    "no-await-in-loop": "off",
+    "no-console": [
+      "error", {
+        "allow": [
+          "log", "error", "time", "timeEnd"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/core-modules": [
+      "aws-sdk",
+      "dotenv"
+    ]
+  }
+}

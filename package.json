@@ -38,6 +38,7 @@
     "build": "npm i && gulp clean && babel src -d build/Release && gulp install-dependancies",
     "make": "npm run build && gulp build-zip",
     "quick": "babel src -d build/Release && gulp build-zip",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "execlocal": "node handle.js"
   }
 }

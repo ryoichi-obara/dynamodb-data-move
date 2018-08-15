@@ -1,7 +1,9 @@
 const AWS = require('aws-sdk');
 
-// To specify profile (if you need, e.g. devlocal)
-// AWS.config.credentials = new AWS.SharedIniFileCredentials({ profile: process.env.PROFILE });
+// Set profile if specified.
+if (process.env.PROFILE) {
+  AWS.config.credentials = new AWS.SharedIniFileCredentials({ profile: process.env.PROFILE });
+}
 
 const { FROM_REGION } = process.env;
 const { FROM_TABLE } = process.env;

@@ -7,17 +7,17 @@
     "url": "https://github.com/ryoichi-obara/dynamodb-data-move/issues"
   },
   "devDependencies": {
-    "aws-sdk": "^2.279.1",
+    "aws-sdk": "^2.402.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "dotenv": "^6.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "gulp": "^3.9.1",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-install": "^1.1.0",
-    "gulp-zip": "^4.1.0"
+    "gulp-zip": "^4.2.0"
   },
   "homepage": "https://github.com/ryoichi-obara/dynamodb-data-move#readme",
   "keywords": [

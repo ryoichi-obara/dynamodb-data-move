@@ -7,7 +7,7 @@
     "url": "https://github.com/ryoichi-obara/dynamodb-data-move/issues"
   },
   "devDependencies": {
-    "aws-sdk": "^2.493.0",
+    "aws-sdk": "^2.814.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "dotenv": "^8.0.0",
